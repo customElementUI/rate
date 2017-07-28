@@ -175,7 +175,164 @@
                 的字符串，<code>{value}</code> 会被解析为分值。为组件设置 <code>:max="10"</code>属性修改星星个数。
             </template>
         </demonstration>
-
+        <demonstration
+                anchor="attributes"
+                title="Attributes"
+                :show-content="false">
+            <template slot="table">
+                <table class="vd-demo__table">
+                    <thead>
+                    <th>参数</th>
+                    <th>说明</th>
+                    <th>类型</th>
+                    <th>可选值</th>
+                    <th>默认值</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>size <i class="vd-demo__new">（新增）</i></td>
+                        <td>评分字体大小</td>
+                        <td>number / string</td>
+                        <td>% / in / cm / mm / em / ex / pt / pc / px / rem</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>max</td>
+                        <td>最大分值</td>
+                        <td>number</td>
+                        <td>—</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>是否为只读</td>
+                        <td>boolean</td>
+                        <td>—</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>allow-half</td>
+                        <td>是否允许半选</td>
+                        <td>boolean</td>
+                        <td>—</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>low-threshold</td>
+                        <td>低分和中等分数的界限值，值本身被划分在低分中</td>
+                        <td>number</td>
+                        <td>—</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>high-threshold</td>
+                        <td>高分和中等分数的界限值，值本身被划分在高分中</td>
+                        <td>number</td>
+                        <td>—</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>colors</td>
+                        <td>icon 的颜色数组，共有 3 个元素，为 3 个分段所对应的颜色</td>
+                        <td>array</td>
+                        <td>—</td>
+                        <td>['#F7BA2A', '#F7BA2A', '#F7BA2A']</td>
+                    </tr>
+                    <tr>
+                        <td>void-color</td>
+                        <td>未选中 icon 的颜色</td>
+                        <td>string</td>
+                        <td>—</td>
+                        <td>#C6D1DE</td>
+                    </tr>
+                    <tr>
+                        <td>disabled-void-color</td>
+                        <td>只读时未选中 icon 的颜色</td>
+                        <td>string</td>
+                        <td>—</td>
+                        <td>#EFF2F7</td>
+                    </tr>
+                    <tr>
+                        <td>icon-classes</td>
+                        <td>icon 的类名数组，共有 3 个元素，为 3 个分段所对应的类名</td>
+                        <td>array</td>
+                        <td>—</td>
+                        <td>['vm-icon-star-on', 'vm-icon-star-on','vm-icon-star-on']</td>
+                    </tr>
+                    <tr>
+                        <td>void-icon-class</td>
+                        <td>未选中 icon 的类名</td>
+                        <td>string</td>
+                        <td>—</td>
+                        <td>vm-icon-star-empty</td>
+                    </tr>
+                    <tr>
+                        <td>disabled-void-icon-class</td>
+                        <td>只读时未选中 icon 的类名</td>
+                        <td>string</td>
+                        <td>—</td>
+                        <td>vm-icon-star-on</td>
+                    </tr>
+                    <tr>
+                        <td>show-text</td>
+                        <td>是否显示辅助文字</td>
+                        <td>boolean</td>
+                        <td>—</td>
+                        <td>false</td>
+                    </tr>
+                    <tr>
+                        <td>text-color</td>
+                        <td>辅助文字的颜色</td>
+                        <td>string</td>
+                        <td>—</td>
+                        <td>#1F2D3D</td>
+                    </tr>
+                    <tr>
+                        <td>texts</td>
+                        <td>辅助文字数组</td>
+                        <td>array</td>
+                        <td>—</td>
+                        <td>['极差', '失望', '一般', '满意', '惊喜']</td>
+                    </tr>
+                    <tr>
+                        <td>text-template</td>
+                        <td>只读时的辅助文字模板</td>
+                        <td>string</td>
+                        <td>—</td>
+                        <td>{value}</td>
+                    </tr>
+                    <tr>
+                        <td>text-type <i class="vd-demo__new">（新增）</i></td>
+                        <td>辅助文字类型</td>
+                        <td>string</td>
+                        <td>number</td>
+                        <td>text</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </template>
+        </demonstration>
+        <demonstration
+                anchor="event"
+                title="Events"
+                :show-content="false">
+            <template slot="table">
+                <table class="vd-demo__table">
+                    <thead>
+                    <th>事件名称</th>
+                    <th>说明</th>
+                    <th>回调参数</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>change</td>
+                        <td>分值改变时触发</td>
+                        <td>改变后的分值</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </template>
+        </demonstration>
         <!-- 说明 -->
         <demonstration
                 :show-content="false">
