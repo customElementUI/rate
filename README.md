@@ -1,6 +1,7 @@
 # rate
 
 > [Element](https://github.com/ElemeFE/element) Rate clone, and did just a little change. If you have a better idea of this component improvement, please share it and I will update it immediately.
+npm:  <https://npm.runkit.com/vue-multiple-rate-lf>
 
 ## Install
 
