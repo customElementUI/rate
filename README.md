@@ -17,4 +17,4 @@ Based on vue elementUI-rate component
 
     git subtree push --prefix=gh-pages origin gh-pages  // 指定的gh-pages文件部署到gh-pages分支上
 
-    ```
+```
