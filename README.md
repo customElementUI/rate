@@ -1,7 +1,7 @@
 # rate
 Based on vue elementUI-rate component
 
-# gh-pages steps
+## gh-pages steps
 
  ``` bash
 
@@ -15,6 +15,6 @@ Based on vue elementUI-rate component
 
     git remote add origin https://github.com/fen666/vueCli_gh-pages.git  // 添加仓库
 
-    git push origin gh-pages  // 部署到gh-pages分支
+    git subtree push --prefix=gh-pages origin gh-pages  // 指定的gh-pages文件部署到gh-pages分支上
 
     ```
